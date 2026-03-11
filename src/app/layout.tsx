@@ -23,8 +23,8 @@ const patrickHand = Patrick_Hand({
 });
 
 export const metadata: Metadata = {
-  title: "Sohan Kumar | AI Expert & Developer",
-  description: "Portfolio of Sohan Kumar AKA Pawan Washudev an AI Expert and Web Engineer crafting intelligent digital ecosystems.",
+  title: "Pawan Washudev | AI Expert & Developer",
+  description: "Portfolio of Pawan Washudev AKA Sohan Kumar an AI Expert and Web Engineer crafting intelligent digital ecosystems.",
   icons: {
     icon: '/favicon.ico',
   },
@@ -39,13 +39,11 @@ import FloatingActions from "@/components/FloatingActions";
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
       <body
-        className={`${dancingScript.variable} ${geistMono.variable} ${patrickHand.variable} antialiased font-[family-name:var(--font-patrick)]`}
+        className={`${dancingScript.variable} ${ geistMono.variable} ${patrickHand.variable} antialiased font-[family-name:var(--font-patrick)]`}
       >
         <Preloader />
         <LiveBackground />
